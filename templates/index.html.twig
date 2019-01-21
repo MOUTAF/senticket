@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html.twig' %}
+{% block body %}
+    <button class="btn-primary">OK</button>
+    <div class="form-group">
+        <input type="search" class="input-sm form-control" placeholder="Recherchez par produit ou categories" style="width: 250px; ">
+    </div>
+    <nav class="navbar navbar-inverse" id="nave_color">
+        <ul class="nav navbar-nav" >
 
-</body>
-</html>
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">Alimentaire</a></li>
+            <li><a href="#">High Tech</a></li>
+        </ul>
+    </nav>
+{% endblock %}
